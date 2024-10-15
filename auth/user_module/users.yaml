@@ -1,0 +1,8 @@
+users:
+  - name: cashier_1
+    role: cashier
+    status: available
+
+  - name: store_1
+    role: store
+    status: available
