@@ -1,0 +1,15 @@
+cashier:
+  description: cashier
+  permissions:
+    - create_order
+    - close_order
+    - cancel_order
+    - view_order
+
+store:
+  description: store
+  permissions:
+    - edit_product
+    - view_product
+    - edit_inventory
+    - view_inventory
