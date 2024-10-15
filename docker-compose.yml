@@ -1,0 +1,22 @@
+services:
+  user_module:
+    build:
+      context: ./auth
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000" 
+    networks:
+      - security_network
+
+  autorization_module:
+    build:
+      context: ./autorization
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    networks:
+      - security_network
+
+networks:
+  security_network:
+    driver: bridge
